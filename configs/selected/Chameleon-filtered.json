@@ -1,0 +1,18 @@
+{
+ "dataset": "Chameleon-filtered",
+ "training": {
+  "lr": 0.003,
+  "weight_decay": 0.001,
+  "feature_preprocessing": "none"
+ },
+ "model": {
+  "backbone": "mignn",
+  "layers": 3,
+  "injection": "propagated",
+  "kappa": 0.95,
+  "head": "mlp",
+  "dropout": 0.0,
+  "input_dropout": 0.5,
+  "lam": 0.3
+ }
+}

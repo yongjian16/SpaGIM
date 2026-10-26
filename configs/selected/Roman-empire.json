@@ -1,0 +1,20 @@
+{
+ "dataset": "Roman-empire",
+ "training": {
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "feature_preprocessing": "row_l1"
+ },
+ "model": {
+  "backbone": "mignn",
+  "layers": 6,
+  "injection": "own",
+  "kappa": 0.95,
+  "input_map": true,
+  "batch_norm": true,
+  "head": "linear",
+  "dropout": 0.3,
+  "input_dropout": 0.2,
+  "lam": 0.3
+ }
+}

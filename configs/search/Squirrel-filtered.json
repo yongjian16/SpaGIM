@@ -1,0 +1,44 @@
+{
+ "dataset": "Squirrel-filtered",
+ "fixed": {
+  "backbone": "mignn",
+  "kappa": 0.95,
+  "lam": 0.3
+ },
+ "space": {
+  "lr": [
+   0.0003,
+   0.001,
+   0.003,
+   0.01,
+   0.03
+  ],
+  "weight_decay": [
+   0.0,
+   0.0001,
+   0.001
+  ],
+  "dropout": [
+   0.0,
+   0.3,
+   0.6
+  ],
+  "feature_preprocessing": [
+   "row_l1",
+   "none"
+  ],
+  "layers": [
+   2,
+   3
+  ],
+  "injection": [
+   "propagated",
+   "own",
+   "combined"
+  ],
+  "head": [
+   "linear",
+   "mlp"
+  ]
+ }
+}

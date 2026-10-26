@@ -1,0 +1,18 @@
+{
+ "dataset": "CiteSeer",
+ "training": {
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "feature_preprocessing": "row_l1"
+ },
+ "model": {
+  "backbone": "ppr",
+  "layers": 1,
+  "gamma": 0.9,
+  "mlp_layers": 1,
+  "width": "classes",
+  "dropout": 0.6,
+  "input_dropout": 0.8,
+  "lam": 0.03
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "dataset": "Actor",
+ "training": {
+  "lr": 0.0003,
+  "weight_decay": 0.0001,
+  "feature_preprocessing": "none"
+ },
+ "model": {
+  "backbone": "mignn",
+  "layers": 2,
+  "injection": "own",
+  "kappa": 0.95,
+  "head": "mlp",
+  "dropout": 0.3,
+  "input_dropout": 0.5,
+  "lam": 0.3
+ }
+}

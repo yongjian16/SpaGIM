@@ -1,0 +1,20 @@
+{
+ "dataset": "Minesweeper",
+ "training": {
+  "lr": 0.003,
+  "weight_decay": 0.0001,
+  "feature_preprocessing": "row_l1"
+ },
+ "model": {
+  "backbone": "mignn",
+  "layers": 12,
+  "injection": "own",
+  "kappa": 0.95,
+  "input_map": true,
+  "batch_norm": true,
+  "head": "linear",
+  "dropout": 0.6,
+  "input_dropout": 0.1,
+  "lam": 0.3
+ }
+}

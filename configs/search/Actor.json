@@ -1,0 +1,71 @@
+{
+ "dataset": "Actor",
+ "fixed": {
+  "backbone": "mignn",
+  "kappa": 0.95,
+  "lam": 0.3
+ },
+ "space": {
+  "lr": [
+   0.0003,
+   0.001,
+   0.003,
+   0.01,
+   0.03
+  ],
+  "weight_decay": [
+   0.0,
+   0.0001,
+   0.001
+  ],
+  "dropout": [
+   0.0,
+   0.3,
+   0.6
+  ],
+  "feature_preprocessing": [
+   "row_l1",
+   "none"
+  ],
+  "architecture": [
+   "2-propagated-linear",
+   "2-own-linear",
+   "2-own-mlp",
+   "3-propagated-mlp"
+  ],
+  "variant": [
+   "plain",
+   "input_dropout"
+  ]
+ },
+ "bundles": {
+  "architecture": {
+   "2-propagated-linear": {
+    "layers": 2,
+    "injection": "propagated",
+    "head": "linear"
+   },
+   "2-own-linear": {
+    "layers": 2,
+    "injection": "own",
+    "head": "linear"
+   },
+   "2-own-mlp": {
+    "layers": 2,
+    "injection": "own",
+    "head": "mlp"
+   },
+   "3-propagated-mlp": {
+    "layers": 3,
+    "injection": "propagated",
+    "head": "mlp"
+   }
+  },
+  "variant": {
+   "plain": {},
+   "input_dropout": {
+    "input_dropout": 0.5
+   }
+  }
+ }
+}
